@@ -1,0 +1,28 @@
+.App {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	padding: 2rem;
+	align-items: stretch; /* Stretch both children to be the same height */
+	min-height: 100vh;
+}
+
+
+.App::-webkit-scrollbar {
+    /* For Chrome and Safari */
+    width: 0;  /* remove scrollbar space */
+    background: transparent;  /* just make scrollbar invisible */
+}
+
+
+@media screen and (max-width: 1340px) {
+	.App{
+		flex-direction: column;
+	}
+}
+
+.App > * 
+{
+	width: 100%;
+	/* flex-direction:  column; */
+}
